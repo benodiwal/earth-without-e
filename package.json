@@ -1,0 +1,24 @@
+{
+  "name": "earth-without-e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src" 
+  ],
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benodiwal/earth-without-e.git"
+  },
+  "keywords": [],
+  "author": "Sachin Beniwal <sachinbeniwal0101@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benodiwal/earth-without-e/issues"
+  },
+  "homepage": "https://github.com/benodiwal/earth-without-e#readme"
+}
