@@ -19,6 +19,9 @@
     "size": "size-limit",
     "analyze": "size-limit --why"
   },
+  "bin": {
+    "earth-without-e": "dist/index.js"
+  },
   "peerDependencies": {},
   "husky": {
     "hooks": {
