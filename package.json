@@ -51,5 +51,19 @@
     "tsdx": "^0.14.1",
     "tslib": "^2.6.3",
     "typescript": "^5.5.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benodiwal/earth-without-e.git"
+  },
+  "keywords": [
+    "backend",
+    "template",
+    "cli",
+    "express"
+  ],
+  "bugs": {
+    "url": "https://github.com/benodiwal/earth-without-e/issues"
+  },
+  "homepage": "https://github.com/benodiwal/earth-without-e#readme"
 }
