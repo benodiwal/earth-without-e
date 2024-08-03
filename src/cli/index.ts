@@ -1,4 +1,5 @@
 import yargs from 'yargs';
+import { setup } from '../setup';
 
 const showHelpAndExit = () => {
   yargs.showHelp();
@@ -6,18 +7,22 @@ const showHelpAndExit = () => {
 };
 
 const argv = yargs
-  .usage('Usage: earth-without-e [options] <name>')
+  .usage('Usage: earth-without-e [options] <path>')
   .command(
-    'setup <name>',
+    'setup <path>',
     'Setup Project',
     (yargs) => {
-      return yargs.positional('name', {
-        describe: 'Name of the project',
+      return yargs.positional('path', {
+        describe: 'Path of the project',
         type: 'string',
       });
     },
     (argv) => {
-      console.log(`Setting up project named: ${argv.name}`);
+      if (!argv.path) {
+        console.log("Please provide a path for the project");
+        process.exit(1);
+      }
+      setup(argv.path);
     }
   )
   .option('h', {
