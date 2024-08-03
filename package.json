@@ -12,10 +12,10 @@
   },
   "scripts": {
     "start": "tsdx watch",
-    "build": "tsdx build",
+     "build": "tsdx build && node ./scripts/add-shebang.js",
     "test": "tsdx test",
     "lint": "tsdx lint",
-    "prepare": "tsdx build && node ./dist/index.js",
+    "prepare": "tsdx build && node ./scripts/add-shebang.js",
     "size": "size-limit",
     "analyze": "size-limit --why"
   },
