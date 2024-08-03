@@ -51,11 +51,12 @@ export const updatePackageJson = async (projectPath: string) => {
 
     console.log(`\n\x1b[33mExecuting: ${commands}\x1b[0m`);
 
-    exec(commands, (error _, stderr) => {
+    exec(commands, (error, stdout, stderr) => {
       if (error) {
         console.error(`\x1b[31mError: ${error.message}\x1b[0m`);
         return;
       }
+      console.log(stdout);
       if (stderr) console.error(`\x1b[31m${stderr}\x1b[0m`);
       console.log('\n\x1b[32mSetup completed successfully!\x1b[0m');
     });
